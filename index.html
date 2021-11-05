@@ -4,11 +4,15 @@
   <meta charset="UTF-8" />
   <title>diegxalv.github.io</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website profile of Juan Diego Mesa">
+  <meta name="keywords" content="Juan Diego Mesa, Juan Diego, diegxalv, diegxalv github, diegxalv.github.io">
+  <meta name="author" content="Juan Diego Mesa">
+  <meta name="copyright" content="Juan Diego Mesa">
+  <meta name="robots" content="index, follow">
 
   <!--========== Stylesheets  ==========-->
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
 
   <!--========== Fonts  ==========-->
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -16,14 +20,12 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" rel="stylesheet" type="text/css">
 
   <!--========== Javascripts  ==========-->
-  <!-- remember, jQuery is completely optional -->
-  <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+  <script type='text/javascript' src="js/jquery-2.1.0.min.js"></script>
   <script type='text/javascript' src='js/jquery.particleground.js'></script>
   <script type='text/javascript' src='js/demo.js'></script>
-  <script type='text/javascript' src='js/jquery.nav.js'></script>
 
   <!-- Font Awesome -->
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
 
   <!-- Devicons -->
   <link  rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -33,43 +35,44 @@
 <div class="preloader">
   <div class="loading-webpage"></div>
 </div>
-<!-- Particulas -->
-<div id="particles"></div>
 
 <!-- Navbar -->
 <nav class="header navbar navbar-expand-lg fixed-top navbar-dark p-3">
   <div class="container">
+  <a class="navbar-brand" href="#">Juan Diego Mesa</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav ml-auto navigator">
+      <li class="nav-item active current">
+        <a class="nav-link" href="#section-home">Home</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#section-about">About me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#section-about">Contact</a>
+        <a class="nav-link" href="#section-home" id="btn-networks-nav">Contact</a>
       </li>
     </ul>
   </div>
 </div>
 </nav>
 
-<section id="section-home" class="home-wrap">
+<section id="section-home" class="section home-wrap">
+ <div id="particles">
   <div id="intro">
     <img src="./img/diego.jpg" class="profile-img">
     <h1>Juan Diego Mesa</h1>
     <p>Student of Web App Development</p>
     <a href="#" class="btn" id="btn-networks">Contact me</a>
     <div class="social-networks" id="social-networks" style="display: none;">
-      <a class="social-icon" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a class="social-icon" href="#" target="_blank"><i class="fab fa-github"></i></a>
-      <a class="social-icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="social-icon" href="https://www.linkedin.com/in/juan-diego-mesa-%C3%A1lvarez-a42a791b0/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="social-icon" href="https://github.com/diegxalv" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="social-icon" href="https://twitter.com/diegxalv" target="_blank"><i class="fab fa-twitter"></i></a>
       <a class="social-icon" href="mailto:juaandii13@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
     </div>
+  </div>
   </div>
 </section>
 
@@ -90,7 +93,6 @@
           <ul class="tab-nav">
             <li class="tab-selected"><a href="#one">About me</a></li>
             <li><a href="#three">Knowledges</a></li>
-            <li><a href="#four">Contact</a></li>
           </ul>
         <div class="tab one">
             <h4>HI THERE!</h4>
@@ -126,14 +128,6 @@
           </div>
         </div>
         </div>
-        <div class="tab four" id="contact">
-          <h4>Preferred contact methods:</h4>
-          <ul class="list-items">
-            <li><span class="far fa-envelope"></span><a href="mailto:juaandii13@gmail.com"> &nbsp;juaandii13@gmail.com</a></li>
-            <li><span class="fab fa-whatsapp"></span><a href="tel:666555444"> &nbsp;(+34) 610440417</a></li>
-          </ul>
-        </div>
-        </div>
       </div>
     </div>
   </div>
@@ -149,7 +143,7 @@
 </header>
 
 <!--========== Javascripts  ==========-->
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
 <script type='text/javascript' src='js/bootstrap.bundle.min.js'></script>
 <script type='text/javascript' src='js/scripts.js'></script>
 <script type='text/javascript' src='js/jquery.nav.js'></script>

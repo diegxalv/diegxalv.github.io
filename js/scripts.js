@@ -1,6 +1,4 @@
-/* ----------------------------- 
-Preloader
------------------------------ */
+/* Preloader */
 $(window).load(function() {
 	'use strict';
 	$('.preloader').delay(600).fadeOut();
@@ -27,7 +25,7 @@ $(window).ready(function() {
 	});
 
 
-	$('.navigation').onePageNav({
+	$('.navigator').onePageNav({
 		currentClass: 'current',
 		scrollSpeed: 1000
 	});
@@ -37,6 +35,12 @@ $(window).ready(function() {
 
 $(document).ready(function(){
   $('#btn-networks').click(function(){
+    $('#social-networks').fadeToggle();
+  });
+});
+
+$(document).ready(function(){
+  $('#btn-networks-nav').click(function(){
     $('#social-networks').fadeToggle();
   });
 });
